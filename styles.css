@@ -3,8 +3,16 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     box-sizing: border-box;
 }
 
-html,
-body {}
+container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #36454F;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+}
