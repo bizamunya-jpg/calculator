@@ -1,49 +1,67 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Arial, sans-serif;
-    box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
+body {
     min-height: 100vh;
-    background-color: #36454F;
     display: flex;
-    flex-direction: center;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f1f1, #f9f6f6);
 }
 
 .calculator {
-    background: #000000;
+    width: 320px;
+    background: #f4f1f1;
     padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.display {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: none;
     border-radius: 10px;
-}
-
-.calculator fore input {
-    border: 0;
-    outline: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3);
-    background: transparent;
-    font-size: 20px;
-    color: dimgray;
-    cursor: pointer;
-    margin: 10px;
-}
-
-fore.display {
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
-}
-
-fore.display input {
+    background: #ece6e6;
+    color: #020202;
     text-align: right;
-    flex: 1;
-    font-size: 45px;
-    box-shadow: #36454F;
+    font-size: 2rem;
+}
+
+.calculator-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calculator-table td {
+    padding: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2d2d2d;
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #444444;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+td[rowspan="2"] button {
+    height: calc(100% - 6px);
 }
