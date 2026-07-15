@@ -22,3 +22,12 @@
     padding: 20px;
     border-radius: 10px;
 }
+
+.calculator fore input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box -shadow: -8px -8px 15px;
+}
