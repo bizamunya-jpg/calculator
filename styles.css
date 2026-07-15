@@ -34,3 +34,16 @@
     cursor: pointer;
     margin: 10px;
 }
+
+fore.display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+fore.display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: #36454F;
+}
