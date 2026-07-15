@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-container {
+.container {
     width: 100%;
     min-height: 100vh;
     background-color: #36454F;
@@ -15,4 +15,10 @@ container {
     flex-direction: center;
     align-items: center;
     justify-content: center;
+}
+
+.calculator {
+    background: #000000;
+    padding: 20px;
+    border-radius: 10px;
 }
